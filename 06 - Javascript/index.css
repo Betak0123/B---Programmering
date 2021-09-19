@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald';
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    height: 100vh;
+}
+
+header{
+    background-color: lightgreen;
+    border: solid 0.2rem black;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+}
+
+main{
+    background-color: gray;
+    display: grid;
+    place-items: center;
+    border: solid 0.2rem black;
+    transition: 1s all ease-in-out;
+}
+
+footer{
+    background-color: lightsalmon;
+    border: solid 0.2rem black;
+    transition: 1s all ease-in-out;
+    border-bottom-right-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+#tid{
+    border-radius: 0;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    border: 1rem solid black;
+    padding: 2rem;
+    height: 30vh;
+    width: 30vh;
+    /* transition siger om hvor hurtigt den skal forandre sig (.4s), hvad der skal forandre sig (all) og hvordan stilen af forandringen skal være (ease-in-out) */
+    transition: .3s all ease-in-out;
+}
+
+#button:hover{
+    transform:scale(1.2) ;
+    border-radius: 50%;
+}
+
+#button{
+    color: black;
+    border: 0.2rem solid black;
+    padding: 1rem;
+    /* Cursor: pointer bliver brugt til at lave noget til en knap */
+    cursor: pointer;
+    transition: .15s all ease-in-out;
+}
+

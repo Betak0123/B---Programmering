@@ -1,0 +1,72 @@
+html {
+    background: linear-gradient(to right, rgb(221, 46, 221) 0%, rgb(228, 9, 82) 100%);
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    transition: all ease-in-out;
+}
+
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid pink;
+    margin: 50px auto;
+    border-radius: 100%;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 3px #000000,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+        background-image: url(./Assets/Urskive1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+}
+
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: 0.3s all;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand-hour{
+    width: 30%;
+    left: 20%;
+    height: 8px;
+    background-color: rgb(7, 212, 7);
+}
+.hand-minute{
+    width: 40%;
+    left: 10%;
+    background-color:black;
+}
+.hand-seconds{
+    width: 50%;
+    background-color: rgb(255, 55, 55);
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter';
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 6fr 0.5fr;
+}
+
+header{
+    background-color: rgb(36, 33, 33);
+}
+
+main{
+    background-color: rgb(71, 71, 71);
+    display: grid;
+    place-items: center;
+    /* Disse to positioner kan blive brugt til at få baggrunden til at passe */
+    background-position: bottom left;
+    background-size: cover;
+    transition: 1s  all;
+}
+
+footer{
+    background-color: rgb(163, 163, 163);
+}
+
+#button{
+    border: 0.2rem solid white;
+    padding: .25rem;
+    height: 2.5rem;
+    width: 7rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: white;
+    transition: .15s all ease-in-out;
+    display: grid;
+    place-items: center;
+}
+
+#button:hover{
+    background-color: whitesmoke;
+    transform: scale(125%,125%);
+    border-radius: 1.5rem;
+    color: black;
+    border: 0.2rem solid black;
+}

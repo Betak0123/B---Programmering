@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter';
+    font-size: 1.5rem;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3 1fr);
+    background-image: url(./Assets/bg4.jpg);
+    background-position: bottom left;
+    background-size: cover;
+}
+
+header{
+    background-color: aliceblue;
+    display: grid;
+    place-items: end;
+    padding: 0.3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: all 1s linear;
+}
+
+main{
+    background-color: antiquewhite;
+    display: grid;
+    place-items: end;
+    padding: 0.3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: all 1s linear;
+}
+
+footer{
+    background-color: aqua;
+    display: grid;
+    place-items: end;
+    padding: .3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: all 1s linear;
+}

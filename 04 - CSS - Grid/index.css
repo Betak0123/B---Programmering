@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Rampart One';
+}
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    /* Display er ikke noget visuelt, men siger bare hvordan vi gerne vil have tingene displayet på slærmen */
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* Rem er enheden som er universal for alle skærme. Dette burde man generelt lave sine enheder i */
+    gap: 1rem;
+
+}
+
+
+.child{
+    background-color: orchid;
+    border: 0.3rem solid black;
+    display:grid;
+    place-items: center;
+    font-size: 3rem;
+
+}

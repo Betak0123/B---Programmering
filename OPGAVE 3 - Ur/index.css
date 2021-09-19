@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter';
+    font-size: 2rem;
+}
+
+header{
+    background-color: rgb(36, 33, 33);
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+main{
+    background-color: rgb(71, 71, 71);
+    display: grid;
+    place-items: center;
+    transition: 1s ease-in-out;
+}
+
+footer{
+    background-color: rgb(163, 163, 163);
+    transition: 1s ease-in-out;
+}
+
+body{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    transition: all ease-in-out;
+}
+
+#ur{
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 20vh;
+    cursor: pointer;
+}
+
+/* #ur:hover{
+    animation-duration: 2s;
+    animation-name: hop;
+    transition: all ease-in-out;
+    
+}
+
+@keyframes hop {
+
+    from {
+      margin-bottom: 0%;
+    }
+    25%{
+    margin-bottom: 5%;
+    }
+    50%{
+        margin-bottom: 10%;
+    }
+  to{
+    margin-bottom: 0%;
+  }
+
+  } */
+
+#thomas{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.7s all ease-in-out;
+    border-radius: 50%;
+    height: 30vh;
+    width: 30vh;
+    cursor: pointer;
+}
+

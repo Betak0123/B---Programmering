@@ -1,0 +1,18 @@
+body{
+    background-image: url(./Assets/Background.jfif);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+
+    font-size: 4rem;
+    border: 4px solid white;
+    border-radius: 2rem;
+    padding: 2rem;
+}
