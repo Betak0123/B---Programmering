@@ -7,3 +7,49 @@
     box-sizing: border-box;
     font-family: 'Koh Santepheap';
 }
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+input{
+    width: 80vw;
+    font-size: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    padding: .5rem;
+    border: 1px solid lightgray;
+}
+
+header{
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem;
+    transition: 0.4s ease-in-out;
+}
+
+.card{
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, rgb(228, 9, 82) 0%, rgb(221, 46, 221) 100%);
+    height: 10rem;
+    color: white;
+    font-size: 3rem;
+    /* Første 2 værdier er x og y koordinat for lysskilde, og de næste 2 noget om hvordan det ser ud */
+    box-shadow: 10px 0px 10px 2px darkgray;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(110%,110%);
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(221, 46, 221) 0%, rgb(228, 9, 82) 100%);
+    border-radius: 1rem;
+}
