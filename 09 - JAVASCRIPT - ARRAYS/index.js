@@ -24,7 +24,7 @@ const addCard = name => {
 addCard('Gertrud')
 
 // Vi vil gerne lave en array med tekst variable
-let names = ['Bjarke','Sofus','Emil','Marius','Nagib','Bjørn']
+let names = ['Bjarke','Sofus','Emil','Marius','Nagib','Bjørn','Anna','Du','Er','Grim']
 
 // .push sætter en ting ind i slutningen af listen
 names.push('Simon')

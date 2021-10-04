@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./Assets/Breaking\ bad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    place-items: center;
+    background: linear-gradient(#222, rgba(0,0,0,0));
+    color: white;
+}
+
+main{
+    height: 200vh;
+}
+
+header img{
+    height: 1.5rem;
+}
+
+.left, .right{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+}
+
+.left{
+    justify-content: left;
+    padding-left: 1rem;
+}
+.right{
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+.break{
+    width: 50vw;
+    padding: 2rem;
+    margin-left: 1rem;
+    color: white;
+
+}
+
+.break h1{
+    font-size: 7.5rem;
+}
+
+.break h2{
+    margin-bottom: 1rem;
+    width: 30vw;
+}
+
+.break p{
+    font-size: 2rem;
+    width: 30vw;
+}
+
+.binge h2{
+    color: white;
+    margin-left: 3rem;
+    padding-top: 3rem;
+}
+
+#bingelist{
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 1rem;
+}
+
+#arrow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 5rem;
+}
