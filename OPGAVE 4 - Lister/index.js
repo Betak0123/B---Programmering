@@ -2,13 +2,17 @@ let main = document.querySelector('main')
 let input = document.querySelector('#search')
 
 
-const addCard = name => {
+const addCard = (name,i) => {
     let newCard = document.createElement('div')
     newCard.classList.add('card')
     let newH = document.createElement('h1')
     newH.innerHTML = name
     newCard.append(newH)
+    newCard.style.animation= 'anim'
+    newCard.style.animationDuration= '.3s'
+    newCard.style.animationDelay= i/37 + 's'
     main.append(newCard)
+
 }
 
 // addCard('<img src="./assets/Aatrox.png" alt="">')
@@ -62,7 +66,7 @@ input.addEventListener('input',()=>{
     console.log(input.value)
     let results = names.filter( name => name.toLowerCase().includes(input.value.toLowerCase()))
     main.innerHTML=''
-    results.map( name=> addCard(name))
+    results.map( (name, i)=> addCard(name, i))
 })
 
 

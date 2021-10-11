@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+}
+
+
+body{
+    background-color: lightseagreen;
+    background-size: cover;
+    background-position: center;
+
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    place-items: center;
+    gap: .1rem;
+    overflow: hidden;
+}
+
+.card{
+    height: 6rem;
+    width: 100%;
+    background: radial-gradient(lightgray, black);
+    border-radius: 2rem;
+}
+
+@keyframes anim{
+    from{
+    transform: translateX(2000px);    
+}
+    to{
+    transform: translateX(0px);    
+    }
+}
