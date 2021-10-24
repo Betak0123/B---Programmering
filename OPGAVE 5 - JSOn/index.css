@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+    font-size: 1rem;
+}
+
+header{
+    display: grid;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: gray;
+    background-image: url(./Assets/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    width: 25vw;
+    height: 25vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+footer{
+    display: grid;
+
+}
