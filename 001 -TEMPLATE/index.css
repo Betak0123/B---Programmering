@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Koh Santepheap';
+    font-family: 'Roboto:wght@300';
+    font-size: 1rem;
 }
 
 header{
