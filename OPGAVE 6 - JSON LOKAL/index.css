@@ -6,19 +6,117 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto:wght@300';
-    font-size: 1rem;
+    transition: all .3s ease-in-out;    
+}
+
+
+main{
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+.page{
+    width: 100vw;
+}
+
+
+.rykhøjre{
+    left: 90vw;
 }
 
 header{
     display: grid;
+    height: 20vh;
+    place-items: center;
+    position: fixed;
+    top:0;
+    width: 100vw;
+    background-color: white ;
 }
 
-main{
-    display: grid;
-    
+#pilhøjre{
+    position: absolute;
+    top: 30;
+    left: 95vw;
+    cursor: pointer;
+}
+#pilvenstre{
+    position: absolute;
+    top: 30;
+    left: 5vw;
+    cursor: pointer;
 }
 
-footer{
-    display: grid;
+#searchicon{
+    cursor:pointer
+}
+#closeicon{
+    cursor: pointer;
+}
 
+body{
+    background: linear-gradient(white,gray);
+}
+
+#searchbar{
+    background-color: lightblue;
+    z-index:2;
+    position: fixed;
+    top: -20vw;
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    transition: all .3s ease-in-out;
+}
+#searchbar.show{
+    top: 0;
+}
+
+input{
+    width: 50vh;
+    padding: .5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    outline: none;
+}
+
+
+
+
+
+#title{
+    border-bottom: solid 5px hotpink;
+    /* Generelt når du vil beskrive properties om udsegne, vil den køre i urets retning med de forskellige sider. Den første er top. 2 højre. 3 bund og 4 højre */
+    padding: 0 .5rem 0.5rem  .5rem;
+}
+
+.card{
+    height: 20vh;
+    background-color:rgb(255, 254, 173);
+    border-radius: 1rem;
+    padding: .8rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: .5fr 4fr;
+}
+
+.card h2{
+    display: grid;
+    place-items: center;
+}
+
+.card .members{
+    background-color: gray;
+    border-radius: 1rem;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+.members::-webkit-scrollbar{
+    display: none;
 }
