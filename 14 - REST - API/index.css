@@ -34,7 +34,7 @@ header{
     display: grid;
     place-items: center;
     height: 10vh;
-    background: linear-gradient(gray,#242F3F);
+    background: linear-gradient(gray,rgb(36, 47, 63));
     color: white;
     text-shadow : 2px 2px 2px black;
 }
@@ -69,8 +69,10 @@ button{
     color: black    ;
     background-color: white;
     display: grid;
-    text-align: center;
+    place-items: center;
     padding: 0;
+    margin: 0;
+
 }
 
 
@@ -83,7 +85,7 @@ body, html {
 }
 
 body {
-  background-color: #242F3F;
+  background-color: rgb(36, 47, 63);
 }
 
 .loader {
