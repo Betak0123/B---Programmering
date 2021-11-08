@@ -2,7 +2,7 @@
 let data
 
 
-fetch('./data/characters.json')
+fetch('./Data/characters.json')
 // Når vi arbejder med asynkron kode, bruger vi generelt .then for først at gøre noget efter det er blevet hentet. Det vi får tilbage er dog ikke selve json filen endnu, men et responsobjekt. Vi skal først aktivt bede om det på responseopbjektet, ved at lave det til en json. 
     .then(res => res.json())
     // Nu kan vi så gøre hvad vi gerne vil med json filen. 
