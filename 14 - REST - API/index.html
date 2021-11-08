@@ -15,15 +15,26 @@
     </header>
     <main>
         <div id="activity">
-            <h2 id="title">title</h2>
-            <p id="participants">2</p>
-            <p id="acc">0.2</p>
-            <p id="price">2</p>
-            <p id="cat">fun</p>
+            <h2 id="title"></h2>
+            <p id="participants"></p>
+            <p id="acc"></p>
+            <p id="price"></p>
+            <p id="cat"></p>
+            <span class="loader"><span class="loader-inner"></span></span>
         </div>
     </main>
     <footer>
         <button id='fetch'>What else</button>
+        <select id="pet-select">
+            <option value="">--Choose a type--</option>
+            <option value="">Random</option>
+            <option value="?type=education">Education</option>
+            <option value="?type=relaxation">Relaxation</option>
+            <option value="?type=social">Social</option>
+            <option value="?type=busywork">Busywork</option>
+            <option value="?type=recreational">Recreational</option>
+            <option value="?type=diy">DIY</option>
+        </select>
     </footer>
 
     <script src="index.js"></script>
