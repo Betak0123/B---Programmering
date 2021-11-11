@@ -43,30 +43,38 @@ document.querySelector('#fetch').addEventListener('click',getActivity)
 const outlook =()=>{
     if(document.querySelector('#kategori-select').value == 'type'){
         document.querySelector('#pet-select').style.visibility = 'visible'
+        document.querySelector('#pet-select').style.top = '92vh'
         }else{
         document.querySelector('#pet-select').style.visibility = 'hidden'
-        document.querySelector('#pet-select').value = ''    
+        document.querySelector('#pet-select').value = ''  
+        document.querySelector('#pet-select').style.top = '120vh'  
         }
     
     if(document.querySelector('#kategori-select').value == 'participants'){
         document.querySelector('#participant-select').style.visibility = 'visible'
+        document.querySelector('#participant-select').style.top = '92vh'
         }else{
         document.querySelector('#participant-select').style.visibility = 'hidden'
-        document.querySelector('#participant-select').value = ''    
+        document.querySelector('#participant-select').value = ''   
+        document.querySelector('#participant-select').style.top = '120vh'
         }
 
     if(document.querySelector('#kategori-select').value == 'price'){
         document.querySelector('#price-select').style.visibility = 'visible'
+        document.querySelector('#price-select').style.top = '92vh'
         }else{
         document.querySelector('#price-select').style.visibility = 'hidden'
-        document.querySelector('#price-select').value = ''    
+        document.querySelector('#price-select').value = ''   
+        document.querySelector('#price-select').style.top = '120vh' 
         }
 
     if(document.querySelector('#kategori-select').value == 'acc'){
         document.querySelector('#acc-select').style.visibility = 'visible'
+        document.querySelector('#acc-select').style.top = '92vh'
         }else{
         document.querySelector('#acc-select').style.visibility = 'hidden'
         document.querySelector('#acc-select').value = ''    
+        document.querySelector('#acc-select').style.top = '120vh'
         }
 
 }

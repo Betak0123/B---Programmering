@@ -14,25 +14,36 @@
     width: 50vw;
 }
 
+#kategori-select{
+  box-shadow: 10px 10px 10px 1px black;
+  position: fixed;
+  left: 10vw;
+  top: 92vh;
+}
 #pet-select{
   box-shadow: 10px 10px 10px 1px black;
   position: fixed;
   left: 55vw;
+  top: 120vh;
+  transition: all .5s ease-in-out;
 }
 #participant-select{
   box-shadow: 10px 10px 10px 1px black;
   position: fixed;
   left: 55vw;
+  transition: all .5s ease-in-out;
 }
 #acc-select{
   box-shadow: 10px 10px 10px 1px black;
   position: fixed;
   left: 48vw;
+  transition: all .5s ease-in-out;
 }
 #price-select{
   box-shadow: 10px 10px 10px 1px black;
   position: fixed;
   left: 55vw;
+  transition: all .5s ease-in-out;
 }
 
 
@@ -87,7 +98,6 @@ main{
 footer{
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
 }
 
 button{
