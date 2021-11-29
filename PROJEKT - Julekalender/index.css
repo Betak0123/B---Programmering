@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+    font-size: 1rem;
+}
+
+.overskrift{
+    font-size: 4rem;
+    text-decoration-line: underline;
+}
+.billede{
+    height: 10rem;
+}
+
+body{
+    background-color: lightgreen;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+header{
+    display: grid;
+    place-items: center;
+    /* border: 2px solid hotpink; */
+    height: 20vh;
+} 
+
+main{
+    display: grid;
+    /* border: 2px solid hotpink; */
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    /* border: 2px solid hotpink; */
+}
+
+/* ---------------------------------------------------------------- */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  
+  .doorgroup {
+    perspective: 200px;
+    cursor: pointer;
+    display: inline-flex;
+  }
+  
+  .doorway {
+    border: 3px dotted #C65C5C;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    transition: 2s cubic-bezier(.93,-0.22,.95,1);
+  }
+  
+
+  
+  .door {
+    height: 100px;
+    width: 100px;
+    background: green;
+    font-size: 24px;
+    /* background-image: url('http://joeymorello.com/asset_host/door.png'); */
+    border-left: none;
+    transition: 900ms transform ease-in-out;
+    transform: rotateY(180deg);
+    transform-origin: left;
+    display: grid;
+    place-items: center;
+    
+  }
+  
+  /* .door:hover {
+    transform: rotateY(340deg);
+  } */
+
+  .nummer{
+      transform: scale(300%) rotateY(180deg);
+  }
