@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@font-face {
+  font-family: 'Christmas Tree Lights Demo';
+  src:  url('./assets/Christmas\ Tree\ Lights\ Demo.otf') format('opentype')
+}
 
 *{
     margin: 0;
@@ -10,16 +14,23 @@
 }
 
 .overskrift{
-    font-size: 4rem;
-    text-decoration-line: underline;
+  font-size: 8rem;
+  font-weight:normal;
+  font-family: 'Christmas Tree Lights Demo';
 }
+
 .billede{
-    height: 10rem;
+  height: 100px;
+  width: 100px; 
+  transition: 2s cubic-bezier(.93,-0.22,.95,1);
 }
 
 body{
-    background-color: lightgreen;
     display: grid;
+    background-color: lightgreen;
+    overflow: hidden;
+    width: 100vw;
+    font-family: 'Christmas Tree Lights Demo';
     grid-template-rows: 1fr 5fr 1fr;
 }
 
@@ -43,14 +54,6 @@ footer{
 
 /* ---------------------------------------------------------------- */
 
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-  }
-  
   .doorgroup {
     perspective: 200px;
     cursor: pointer;
@@ -66,8 +69,6 @@ footer{
     place-items: center;
     transition: 2s cubic-bezier(.93,-0.22,.95,1);
   }
-  
-
   
   .door {
     height: 100px;

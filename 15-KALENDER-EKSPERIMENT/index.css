@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto';
+}
+
+body{
+    background:rgb(214,0,28);
+}
+
+header{
+
+}
+main{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    padding:4rem;
+}
+.door{
+    background-color:white;
+    background-size:cover;
+    position:relative;
+}
+
+.lock{
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    background-color:white;
+    display:grid;
+    place-items: center;
+    font-size:4rem;
+    z-index:5;
+    transition: all 1s ease-in-out;
+}
+iframe{
+    z-index:1;
+}
+footer{
+    
+}
+
+.open{
+    width: 0;
+}
+.openD{
+    animation: duFlot 3s forwards ease-in-out;
+}
+.openP{
+    animation: pik 3s forwards ease-in-out;
+}
+
+@keyframes duFlot {
+    10%{
+        box-shadow: 0px 0px 1rem 1rem white;
+        transform: scale(80%);
+
+    }
+    50%{
+        box-shadow: 0px 0px 5rem 5rem white;
+        transform: scale(20%);
+
+    }
+    100%{
+        box-shadow: 0px 0px 0rem 0rem white;
+        transform: scale(0);
+
+    }
+}
+@keyframes pik {
+    10%{
+        transform: scale(50%);
+
+    }
+    50%{
+        transform: rotate(180deg) scale(50%);
+        left: 35%;
+    }
+    75%{
+        transform: rotatey(180deg) scale(25%);
+        
+    }
+    90%{
+        transform: scale(20%);
+        
+    }
+
+    100%{
+        transform: scale(0);
+
+    }
+}
