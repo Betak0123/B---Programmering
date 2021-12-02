@@ -6,21 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Den grønne planteboks</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
 </head>
 <body> 
     <header>
+        <img id='logo'src="./assets/Logo.png" alt="">
         <p class="box">Produkter</p>
         <p class="box">Kontakt os</p>
         <p class="box">Hvem er vi?</p>
         <p class="box">Hvorfor os?</p>
     </header>
     <main>
-        <div id="welcomebox">
-            <h1>Den grønne box</h1>
-            <p>Krydderiboksen som giver dig mest for pengene, og holder din samvittighed ren</p>
+        <div id="side1">
+            <div id="welcomebox">
+                <div id="boxholder">
+                    <h1>Den grønne boks</h1>
+                    <p class="text">Krydderiboksen som giver dig mest for pengene, og holder din samvittighed ren</p>
+                    <a id='link1' href="#side2">
+                        <div id="buyBtn">Køb nu</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="side2">
+            <div id="s2Pic"></div>
+            <div id="s2Box">
+                <div id="side2boxholder">
+                    <h1>Den grønne boks</h1>
+                    <p class="p">Den nye krydderboks mod et moderne design der passer ind i ethvert hjem</p>
+                    <div id="buyBtn">Gå til kasse</div>
+                    <p class="numbers">249 kr.</p>
+                    <div id="krydbox">Vælg krydderurter</div>
+                </div>
+                
+            </div>
         </div>
     </main>
-    <footer></footer>
+
+    <footer>
+        <a href="">
+            <h1>DenGrønneBoks@gmail.com</h1>
+        </a>
+    </footer>
 
     <script src="index.js"></script>
 </body>

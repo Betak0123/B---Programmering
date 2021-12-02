@@ -1,13 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@font-face {
+    font-family: 'Berlin Sans';
+    src:  url('./data/Berlin\ Sans\ FB\ Regular.ttf')
+  }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto:wght@300';
+    font-family: 'Berlin Sans';
 }
 
+main{
+    margin-top: 10vh;
+    display: grid;
+    /* width: 200vw; */
+    height: 80vh;
+    grid-auto-flow: column;
+    background-color: gray;
+    /* border: solid 3px hotpink; */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: lightgray;
+    overflow-x: hidden; 
+}
+#side1{
+    background-image: url("./assets/stemning6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;
+    display: grid;
+    width: 100vw;
+    height: 90vw;
+    transition: all .3s ease-in-out;
+    /* border: solid 3px black; */
+}
+#side2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 90vw;
+    /* border: solid 3px black; */
+}
+
+#s2Pic{ 
+    background-image: url('./assets/vores plante.jpg');
+    width: 50vw;
+    background-size: 50vw 80vh;
+}
+
+#s2Box{
+    display: grid;
+    width: 50vw;
+    height: 90vh;
+    background-color: white;
+    place-items: center;
+}
+
+#side2boxholder{
+    display: grid;
+    gap: 2rem;
+}
+
+#side2boxholder h1{
+    position: relative;
+    top: -6rem;
+    left: 8rem;
+}
+
+#krydbox{
+    position: relative;
+    height: 10vh;
+    width: 35vw;
+    border: solid 1px darkgray;
+}
+
+.p{
+    position: relative;
+    top: -6rem;
+    left: 0rem;
+}
+.numbers{
+    position: relative;
+    top: 2.2rem;
+    left: 10rem;
+    font-size: 1.7rem;
+}
+
+
+#link1{
+    text-decoration: none;
+    color: black;
+}
+#link2{
+    text-decoration: none;
+    color: white;
+}
+
+#buyBtn{
+    width: 10vw;
+    height: 3vw;
+    border: solid 2px green;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+    background-color: green;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    top: 6.5rem;
+}
+
+#buyBtn:hover{
+    background-color: darkslategray;
+    border: solid 2px darkslategray;
+    color: white;
+}
+
+.text{
+    width: 20vw;
+}
 
 .box{
     cursor: pointer;
@@ -18,19 +139,27 @@
     text-decoration-color: darkgray;
 }
 
+/* #firkant{
+    width: 20vw;
+    height: 90vh;
+    background-color: white;
+} */
+
+#boxholder{
+    display: grid;
+    gap: 3rem;
+}
+
 #welcomebox{
     width: 35vw;
     height: 90vh;
-    background-color: white;
     display: grid;
     place-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 32%, rgba(255,255,255,0.832837358576243) 73%, rgba(255,255,255,0) 93%);
 }    
 
 
-body{
-    display: grid;
-    background-color: lightgray;
-}
 
 header{
     display: grid;
@@ -43,21 +172,22 @@ header{
     height: 10vh;
     background-color: white;
     border: 1px solid lightgray;
+    position: fixed;
+    
 }
 
-main{
-    display: grid;
-    width: 100vw;
-    height: 90vh;
-    background-color: gray;
-    background-image: url('./assets/spice.jfif');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 footer{
     display: grid;
     width: 100vw;
-    height: 30vh;
+    height: 10vh;
     background-color: lightgreen;
+    place-items: center;
+}
+
+#logo{
+    height: 8vh;
+    position: fixed;
+    left: 1rem;
+    top: 0.4rem;
 }
