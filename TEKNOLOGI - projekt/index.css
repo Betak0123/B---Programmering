@@ -78,9 +78,39 @@ body{
 
 #krydbox{
     position: relative;
-    height: 10vh;
+    height: 14vh;
     width: 35vw;
     border: solid 1px darkgray;
+    border-radius: 1rem;
+    top: -15rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.krydpic{
+    width: 8vw;
+    height: 8vh;
+    border-radius: 100%;
+    border: solid 2px darkgray;
+    gap: 2rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.krydpic:hover{
+    width: 8vw;
+    height: 8vh;
+    border-radius: 100%;
+    border: solid 2px black;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+#krydtekst{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .p{
@@ -121,6 +151,27 @@ body{
 }
 
 #buyBtn:hover{
+    background-color: darkslategray;
+    border: solid 2px darkslategray;
+    color: white;
+}
+#buyBtn2{
+    width: 5vw;
+    height: 3vw;
+    border: solid 2px green;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+    background-color: green;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    top: -33rem;
+    left: 32rem;
+}
+
+#buyBtn2:hover{
     background-color: darkslategray;
     border: solid 2px darkslategray;
     color: white;
