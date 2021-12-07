@@ -4,6 +4,10 @@
   font-family: 'Christmas Tree Lights Demo';
   src:  url('./assets/Christmas\ Tree\ Lights\ Demo.otf') format('opentype')
 }
+@font-face {
+  font-family: 'Round numbers';
+  src:  url('./assets/Combinumerals-OGR4.ttf')
+}
 
 *{
     margin: 0;
@@ -14,7 +18,7 @@
 }
 
 .overskrift{
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight:normal;
   font-family: 'Christmas Tree Lights Demo';
 }
@@ -44,6 +48,11 @@ header{
 main{
     display: grid;
     /* border: 2px solid hotpink; */
+    grid-template-columns: repeat(10, 1fr);
+}
+
+main div{
+  position:relative;
 }
 
 footer{
@@ -58,6 +67,8 @@ footer{
     perspective: 200px;
     cursor: pointer;
     display: inline-flex;
+    position: absolute;
+    padding: 2rem;
   }
   
   .doorway {
@@ -74,7 +85,6 @@ footer{
     height: 100px;
     width: 100px;
     background: green;
-    font-size: 24px;
     /* background-image: url('http://joeymorello.com/asset_host/door.png'); */
     border-left: none;
     transition: 900ms transform ease-in-out;
@@ -82,7 +92,14 @@ footer{
     transform-origin: left;
     display: grid;
     place-items: center;
-    
+    transform: translate(-50%, -50%);
+  }
+  
+  .lågenummer{
+    font-family: 'Round numbers';
+    transform: rotateY(180deg);
+    font-size: 6rem;
+    padding-top: .9rem;
   }
   
   /* .door:hover {
@@ -92,3 +109,4 @@ footer{
   .nummer{
       transform: scale(300%) rotateY(180deg);
   }
+

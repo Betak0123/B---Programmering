@@ -1,0 +1,61 @@
+{
+    "låger":[
+        {
+            "date":1,
+            "nummer": "q",
+            "content":"image",
+            "billede": "./assets/julemand.gif",
+            "animation":"slide"
+        },
+        {
+            "date":2,
+            "nummer": "w",
+            "billede": "",
+            "animation":"duFlot"
+        },
+        {
+            "date":3,
+            "nummer": "e",
+            "billede": "",
+            "animation":"",
+            "hej":
+            [
+                "4=r",
+                "5=t",
+                "6=y",
+                "7=u",
+                "8=i",
+                "9=o",
+                "10=a",
+                "11=s",
+                "12=d",
+                "13=f",
+                "14=g",
+                "15=h",
+                "16=j",
+                "17=k",
+                "18=l",
+                "19=;",
+                "20=2)",
+                "21=2!",
+                "22=2@",
+                "23=2#",
+                "24=2$"
+                
+            ]
+        },
+        {
+            "date":4,
+            "nummer": "r",
+            "billede": "",
+            "animation":"duFlot"
+        },
+        {
+            "date":5,
+            "nummer": "t",
+            "billede": "",
+            "animation":"duFlot"
+        }
+    ]
+}
+
