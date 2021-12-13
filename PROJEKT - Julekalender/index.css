@@ -19,8 +19,9 @@
 
 .overskrift{
   font-size: 6rem;
-  font-weight:normal;
+  font-weight: normal;
   font-family: 'Christmas Tree Lights Demo';
+  color: rgb(1, 255, 77);
 }
 
 .billede{
@@ -31,11 +32,14 @@
 
 body{
     display: grid;
-    background-color: lightgreen;
+    background-image: url('./assets/julebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     overflow: hidden;
     width: 100vw;
     font-family: 'Christmas Tree Lights Demo';
-    grid-template-rows: 0.5fr 5fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
 }
 
 header{
@@ -45,11 +49,21 @@ header{
     height: 20vh;
 } 
 
+#darkmaker{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  /* background-color: rgba(65, 65, 65, 0.678); */
+  z-index: 0;
+}
+
 main{
     display: grid;
     /* border: 2px solid hotpink; */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding: 2rem;
+    padding: 1rem;
 }
 
 main div{
@@ -61,6 +75,63 @@ footer{
     place-items: center;
     /* border: 2px solid hotpink; */
 }
+
+
+
+.nope{
+  animation: nope 1s forwards ease-in-out;
+}
+
+@keyframes dagenslåge{
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: rgb(182, 182, 72);
+  }
+}
+
+@keyframes nope {
+  20%{
+      padding-right: 2rem;
+      background-color: rgb(255, 41, 41);
+  }
+  30%{
+      background-color: rgb(255, 32, 32);
+  }
+  40%{
+      padding-right: 0rem;
+      padding-left: 1.5rem;
+      background-color: rgb(255, 22, 22);
+  }
+
+  50%{
+      background-color: rgb(206, 1, 1);
+  }
+  60%{
+      padding-right: 2rem;
+      padding-left: 0rem;
+      background-color: rgb(206, 1, 1);
+  }
+  70%{
+      background-color: rgb(187, 106, 31);
+  }
+  80%{
+      padding-right: 0rem;
+      padding-left: 1.5rem;
+      background-color: rgb(99, 141, 0);
+  }
+  100%{
+      padding-right: 0rem;
+      padding-left: 0rem;
+      background-color: green;
+
+  }
+}
+
+
+
+
 
 /* ---------------------------------------------------------------- */
 
@@ -104,6 +175,9 @@ footer{
     font-size: 6rem;
     padding-top: .9rem;
     background-image: url('./assets/julemand.gif');
+  }
+  .dagensL{
+  animation: dagenslåge 1s forwards infinite;
   }
   
   /* .door:hover {

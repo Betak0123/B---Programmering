@@ -50,6 +50,101 @@
             "date":5,
             "nummer": "t",
             "billede": "./assets/"
+        },
+        {
+            "date":6,
+            "nummer": "y",
+            "billede": "./assets/"
+        },
+        {
+            "date":7,
+            "nummer": "u",
+            "billede": "./assets/"
+        },
+        {
+            "date":8,
+            "nummer": "i",
+            "billede": "./assets/"
+        },
+        {
+            "date":9,
+            "nummer": "o",
+            "billede": "./assets/"
+        },
+        {
+            "date":10,
+            "nummer": "a",
+            "billede": "./assets/"
+        },
+        {
+            "date":11,
+            "nummer": "s",
+            "billede": "./assets/"
+        },
+        {
+            "date":12,
+            "nummer": "d",
+            "billede": "./assets/"
+        },
+        {
+            "date":13,
+            "nummer": "f",
+            "billede": "./assets/"
+        },
+        {
+            "date":14,
+            "nummer": "g",
+            "billede": "./assets/"
+        },
+        {
+            "date":15,
+            "nummer": "h",
+            "billede": "./assets/"
+        },
+        {
+            "date":16,
+            "nummer": "j",
+            "billede": "./assets/"
+        },
+        {
+            "date":17,
+            "nummer": "k",
+            "billede": "./assets/"
+        },
+        {
+            "date":18,
+            "nummer": "l",
+            "billede": "./assets/"
+        },
+        {
+            "date":19,
+            "nummer": ";",
+            "billede": "./assets/"
+        },
+        {
+            "date":20,
+            "nummer": "2)",
+            "billede": "./assets/"
+        },
+        {
+            "date":21,
+            "nummer": "2!",
+            "billede": "./assets/"
+        },
+        {
+            "date":22,
+            "nummer": "2@",
+            "billede": "./assets/"
+        },
+        {
+            "date":23,
+            "nummer": "2#",
+            "billede": "./assets/"
+        },
+        {
+            "date":24,
+            "nummer": "2$",
+            "billede": "./assets/"
         }
     ]
 }

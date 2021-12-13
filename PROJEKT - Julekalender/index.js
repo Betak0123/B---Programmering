@@ -8,39 +8,18 @@ let tid = new Date()
 // door.style.transform = 'rotateY(180deg)'
 
 
-const rotate = () =>{
-
-    if (door.style.transform == 'rotateY(180deg)'){
-        document.querySelector('#doorsound').play()
-        door.style.transform = 'rotateY(340deg)'  
-    }else{  
-        door.style.transform = 'rotateY(180deg)'  
-        document.querySelector('#doorclose').play()
-    }
-    console.log(door.style.transform)
-}
-
-const expand = () =>{
-// doorway.style.position = 'absolute'
-// doorway.style.left = '50vw'    
-doorway.style.height = '100vh'
-doorway.style.width = '100vw'
-billede.style.height = '100vh'
-billede.style.width = '100vw'
-    console.log('hello world')
-}
 
 
 fetch('./kalender.json')
-    .then(res => res.json())
+.then(res => res.json())
     .then(json => {
         console.log(json) 
         json.låger.map(låge =>{
             låger(låge)    
         })
-})
-const låger = (låge) => {
-    let newContain = document.createElement('div')
+    })
+    const låger = (låge) => {
+        let newContain = document.createElement('div')
     let WholeDoor = document.createElement('div')
     let newDoorgrp = document.createElement('div')
     let newDoorway = document.createElement('div')
@@ -59,35 +38,84 @@ const låger = (låge) => {
     billede.src = låge.billede
     lågenummer.innerHTML = låge.nummer
     // newDoor.style.transform = 'rotateY(180deg)'
-
+    
     if(låge.date <= new Date().getDate()){
         newDoor.addEventListener('click', rot = () => {
             if (newDoor.style.transform == 'rotateY(180deg)'){
                 document.querySelector('#doorsound').play()
-                newDoor.style.transform = 'rotateY(340deg)'  
+                newDoor.style.transform = 'rotateY(340deg)' 
+                if(låge.date == new Date().getDate()){
+                    document.querySelector('#godsound').play()
+                    newDoor.classList.remove('dagensL')
+
+                } 
             }else{  
                 newDoor.style.transform = 'rotateY(180deg)'  
                 document.querySelector('#doorclose').play()
             }
         })
-    }
+        // newDoorway.addEventListener('click', exp = () => {
+        //     newDoorway.style.height = '100vh'
+        //     newDoorway.style.width = '100vw'
+        //     billede.style.height = '100vh'
+        //     billede.style.width = '100vw'
+        //     console.log('hello world')
+        // })
+        
+    }else{
+        newDoor.addEventListener('click', nope = () => {
+        newDoor.classList.add('nope')
+        setTimeout(() => {
+            newDoor.classList.remove('nope')    
+            alert('Du kan ikke åbne denne låge endnu!')
+        }, 1000);
+    })  
+}
 
-    if(låge.date < new Date().getDate()){
-        // console.log('succes')
-        newDoor.style.transform = 'rotateY(340deg)'
-    }
+if(låge.date < new Date().getDate()){
+    // console.log('succes')
+    newDoor.style.transform = 'rotateY(340deg)'
+}else{
+    newDoor.style.transform = 'rotateY(180deg)'
+}
 
+if(låge.date == new Date().getDate()){
+    newDoor.classList.add('dagensL')
+}
 
-    newDoor.append(lågenummer)
-    newDoorway.append(billede)
-    newDoorgrp.append(newDoorway, newDoor)
-    WholeDoor.append(newDoorgrp)
-    main.append(WholeDoor)
+console.log(newDoor.classList.value)
 
-    // new Date().getDate()
-    
+newDoor.append(lågenummer)
+newDoorway.append(billede)
+newDoorgrp.append(newDoorway, newDoor)
+WholeDoor.append(newDoorgrp)
+main.append(WholeDoor)
+
+// new Date().getDate()
+
 
 }
+// const rotate = () =>{
+
+//     if (door.style.transform == 'rotateY(180deg)'){
+//         document.querySelector('#doorsound').play()
+//         door.style.transform = 'rotateY(340deg)'  
+//     }else{  
+//         door.style.transform = 'rotateY(180deg)'  
+//         document.querySelector('#doorclose').play()
+//     }
+//     console.log(door.style.transform)
+// }
+
+// const expand = () =>{
+// // doorway.style.position = 'absolute'
+// // doorway.style.left = '50vw'    
+// doorway.style.height = '100vh'
+// doorway.style.width = '100vw'
+// billede.style.height = '100vh'
+// billede.style.width = '100vw'
+//     console.log('hello world')
+// }
 
 {/* <div class="doorgroup">
     <div class="doorway">
