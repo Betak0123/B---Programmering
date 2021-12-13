@@ -35,7 +35,7 @@ body{
     overflow: hidden;
     width: 100vw;
     font-family: 'Christmas Tree Lights Demo';
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 0.5fr 5fr;
 }
 
 header{
@@ -48,7 +48,8 @@ header{
 main{
     display: grid;
     /* border: 2px solid hotpink; */
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 2rem;
 }
 
 main div{
@@ -63,36 +64,38 @@ footer{
 
 /* ---------------------------------------------------------------- */
 
+.doorway, .door, .wholedoor{
+  height:100px;
+  width:100px;
+}
+
+.wholedoor{
+  position: relative;
+  /* border: solid 3px black; */
+}
+
   .doorgroup {
-    perspective: 200px;
+    perspective: 400px;
     cursor: pointer;
     display: inline-flex;
-    position: absolute;
-    padding: 2rem;
   }
   
   .doorway {
     border: 3px dotted #C65C5C;
-    height: 100px;
-    width: 100px;
     overflow: hidden;
-    display: grid;
-    place-items: center;
     transition: 2s cubic-bezier(.93,-0.22,.95,1);
+    
   }
   
   .door {
-    height: 100px;
-    width: 100px;
+    
     background: green;
-    /* background-image: url('http://joeymorello.com/asset_host/door.png'); */
     border-left: none;
     transition: 900ms transform ease-in-out;
     transform: rotateY(180deg);
     transform-origin: left;
     display: grid;
     place-items: center;
-    transform: translate(-50%, -50%);
   }
   
   .lågenummer{
@@ -100,13 +103,9 @@ footer{
     transform: rotateY(180deg);
     font-size: 6rem;
     padding-top: .9rem;
+    background-image: url('./assets/julemand.gif');
   }
   
   /* .door:hover {
     transform: rotateY(340deg);
   } */
-
-  .nummer{
-      transform: scale(300%) rotateY(180deg);
-  }
-

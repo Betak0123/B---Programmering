@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+    font-size: 1rem;
+}
+
+header{
+    display: grid;
+}
+
+main{
+    background-color: orange;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+footer{
+    display: grid;
+}
+
+.wholedoor{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 1px solid hotpink;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.doorgroup{
+    perspective: 200px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.doorway, .door{
+    height: 200px;
+    width: 100px;
+}
+
+.doorway{
+    transition: all 1s ease-in-out;
+    background-image: url("./assets/julemand.gif");
+    background-size: cover;
+    
+}
+
+.door{
+    transform: rotateY(180deg);
+    transform-origin: left;
+    background-color: red;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    z-index: 2;
+}
+.door:hover {
+    transform: rotateY(340deg);
+  }

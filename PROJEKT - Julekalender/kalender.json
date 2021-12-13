@@ -3,20 +3,17 @@
         {
             "date":1,
             "nummer": "q",
-            "content":"image",
-            "billede": "./assets/julemand.gif",
-            "animation":"slide"
+            "billede":"./assets/julemand.gif"
         },
         {
             "date":2,
             "nummer": "w",
-            "billede": "",
-            "animation":"duFlot"
+            "billede": "./assets/Camille.png"
         },
         {
             "date":3,
             "nummer": "e",
-            "billede": "",
+            "billede": "./assets/",
             "animation":"",
             "hej":
             [
@@ -47,14 +44,12 @@
         {
             "date":4,
             "nummer": "r",
-            "billede": "",
-            "animation":"duFlot"
+            "billede": "./assets/"
         },
         {
             "date":5,
             "nummer": "t",
-            "billede": "",
-            "animation":"duFlot"
+            "billede": "./assets/"
         }
     ]
 }

@@ -3,6 +3,7 @@ let doorway = document.querySelector('.doorway')
 let body = document.querySelector('body')
 let main = document.querySelector('main')
 let billede = document.querySelector('.billede')
+let tid = new Date()
 
 // door.style.transform = 'rotateY(180deg)'
 
@@ -46,36 +47,46 @@ const låger = (låge) => {
     let newDoor = document.createElement('div')
     let billede = document.createElement('img')
     let lågenummer = document.createElement('div')
-
-
+    
+    
     billede.classList.add('billede')
-    newContain.classList.add('container')
+    WholeDoor.classList.add('wholedoor')
     newDoorgrp.classList.add('doorgroup')
     newDoorway.classList.add('doorway')
     newDoor.classList.add('door')
     lågenummer.classList.add('lågenummer')
-
-    console.log(billede.classList.value )
-    billede.src = "./assets/julemand.gif"
+    
+    billede.src = låge.billede
     lågenummer.innerHTML = låge.nummer
-    newDoor.style.transform = 'rotateY(180deg)'
+    // newDoor.style.transform = 'rotateY(180deg)'
 
-    newDoor.addEventListener('click', rot = () => {
-        if (newDoor.style.transform == 'rotateY(180deg)'){
-            document.querySelector('#doorsound').play()
-            newDoor.style.transform = 'rotateY(340deg)'  
-        }else{  
-            newDoor.style.transform = 'rotateY(180deg)'  
-            document.querySelector('#doorclose').play()
-        }
-        console.log(door.style.transform)
-    })
+    if(låge.date <= new Date().getDate()){
+        newDoor.addEventListener('click', rot = () => {
+            if (newDoor.style.transform == 'rotateY(180deg)'){
+                document.querySelector('#doorsound').play()
+                newDoor.style.transform = 'rotateY(340deg)'  
+            }else{  
+                newDoor.style.transform = 'rotateY(180deg)'  
+                document.querySelector('#doorclose').play()
+            }
+        })
+    }
+
+    if(låge.date < new Date().getDate()){
+        // console.log('succes')
+        newDoor.style.transform = 'rotateY(340deg)'
+    }
+
 
     newDoor.append(lågenummer)
-    newContain.append(newDoorgrp)
-    newDoorgrp.append(newDoor, newDoorway)
+    newDoorway.append(billede)
+    newDoorgrp.append(newDoorway, newDoor)
     WholeDoor.append(newDoorgrp)
     main.append(WholeDoor)
+
+    // new Date().getDate()
+    
+
 }
 
 {/* <div class="doorgroup">

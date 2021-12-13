@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto';
+}
+
+main{
+    background-color:orange;
+    padding:2rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.wholedoor{
+    border:1px solid black;
+    position:relative;
+}
+
+.doorgroup {
+    perspective: 400px;
+    cursor: pointer;
+    display: inline-flex;
+  }
+  
+  .doorway, .door, .wholedoor{
+      height:100px;
+      width:100px;
+  }
+  
+  .doorway {
+    background-image: url('./assets/_DSC2909.JPG');
+    background-size:cover;
+    overflow: hidden;
+  }
+    
+  .door {
+    background: green;
+    font-size: 24px;
+    border-left: none;
+    transition: 600ms transform ease-in-out;
+    transform: rotateY(180deg);
+    transform-origin: left;
+    display:grid;
+    place-items:center;
+  }
+
+  .door div{
+      transform:rotateY(180deg);
+  }
+  
+  .door:hover {
+    transform: rotateY(340deg);
+  }
