@@ -13,7 +13,7 @@
         {
             "date":3,
             "nummer": "e",
-            "billede": "./assets/anna.png",
+            "billede": "./assets/anna.PNG",
             "animation":"",
             "hej":
             [
@@ -49,7 +49,7 @@
         {
             "date":5,
             "nummer": "t",
-            "billede": "./assets/ludovico.png"
+            "billede": "./assets/ludovico.PNG"
         },
         {
             "date":6,
@@ -64,7 +64,7 @@
         {
             "date":8,
             "nummer": "i",
-            "billede": "./assets/siri.png"
+            "billede": "./assets/siri.PNG"
         },
         {
             "date":9,
@@ -74,17 +74,17 @@
         {
             "date":10,
             "nummer": "a",
-            "billede": "./assets/balto.png"
+            "billede": "./assets/balto.PNG"
         },
         {
             "date":11,
             "nummer": "s",
-            "billede": "./assets/Fuck dig andreas.png"
+            "billede": "./assets/Fuck dig andreas.PNG"
         },
         {
             "date":12,
             "nummer": "d",
-            "billede": "./assets/far.png"
+            "billede": "./assets/far.PNG"
         },
         {
             "date":13,
@@ -94,7 +94,7 @@
         {
             "date":14,
             "nummer": "g",
-            "billede": "./assets/simon moe.png"
+            "billede": "./assets/simon moe.PNG"
         },
         {
             "date":15,
