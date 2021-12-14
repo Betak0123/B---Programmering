@@ -95,6 +95,11 @@ if(låge.date == 2){
     console.log('hello world')
     })
 }
+if(låge.date == 14){
+    newDoorway.addEventListener('click', ()=>{
+    newDoorway.classList.add('simon')
+    })
+}
 
 console.log(newDoor.classList.value)
 
@@ -117,9 +122,17 @@ document.querySelector('#button').addEventListener('click', ()=>{
    if(document.querySelector('#input').value == 'it was and it was beautiful'){
        console.log('godt gået!')
        document.querySelector('#nicesound').play()
-       document.querySelector('#riddle2').classList.add('show2')
-       console.log(document.querySelector('#riddle2').classList.value)
        body.style.overflow = 'hidden'
+       
+       setTimeout(() => {
+           document.querySelector('#hopedie').play()
+        //    console.log(document.querySelector('#riddle2').classList.value)
+       }, 1000);
+       setTimeout(() => {
+           document.querySelector('#riddle2').classList.add('show2')
+        //    console.log(document.querySelector('#riddle2').classList.value)
+       }, 2000);
+       
    }else{
     console.log('fuck')
     document.querySelector('#haha').play()

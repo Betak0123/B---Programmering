@@ -125,6 +125,16 @@ footer{
   animation: nope 1s forwards ease-in-out;
 }
 
+.simon{
+  animation: sjov 1s forwards infinite ease-in-out;
+}
+
+@keyframes sjov {
+  50%{
+    transform: rotateY(3600deg);
+  }
+}
+
 @keyframes dagenslåge{
   50%{
     color: yellow;
