@@ -19,7 +19,7 @@ fetch('./kalender.json')
         })
     })
     const låger = (låge) => {
-        let newContain = document.createElement('div')
+    let newContain = document.createElement('div')
     let WholeDoor = document.createElement('div')
     let newDoorgrp = document.createElement('div')
     let newDoorway = document.createElement('div')
@@ -79,8 +79,21 @@ if(låge.date < new Date().getDate()){
     newDoor.style.transform = 'rotateY(180deg)'
 }
 
+// setInterval(() => {
+//     console.log(document.querySelector('#input').value)
+// }, 5000);
+
 if(låge.date == new Date().getDate()){
     newDoor.classList.add('dagensL')
+}
+
+if(låge.date == 2){
+    newDoorway.addEventListener('click', ()=>{
+    document.querySelector('#riddle').classList.add('show')
+    document.querySelector('#darkmaker').style.backgroundColor = 'rgba(65, 65, 65, 0.678)'
+    document.querySelector('#darkmaker').style.zIndex = 3
+    console.log('hello world')
+    })
 }
 
 console.log(newDoor.classList.value)
@@ -91,10 +104,37 @@ newDoorgrp.append(newDoorway, newDoor)
 WholeDoor.append(newDoorgrp)
 main.append(WholeDoor)
 
-// new Date().getDate()
 
 
 }
+document.querySelector('#closeicon').addEventListener('click', ()=>{
+    document.querySelector('#riddle').classList.remove('show')
+    document.querySelector('#darkmaker').style.backgroundColor = 'rgba(0, 0, 0, 0)'
+    document.querySelector('#darkmaker').style.zIndex = 0
+})
+
+document.querySelector('#button').addEventListener('click', ()=>{
+   if(document.querySelector('#input').value == 'it was and it was beautiful'){
+       console.log('godt gået!')
+       document.querySelector('#nicesound').play()
+       document.querySelector('#riddle2').classList.add('show2')
+       console.log(document.querySelector('#riddle2').classList.value)
+       body.style.overflow = 'hidden'
+   }else{
+    console.log('fuck')
+    document.querySelector('#haha').play()
+   }
+})
+
+// door.addEventListener('click', ()=>{
+//     document.querySelector('#riddle').classList.add('show')
+// })
+
+// document.querySelector('#closeicon').addEventListener('click', ()=>{
+//     document.querySelector('#riddle').classList.remove('show')
+//     console.log('hello world')
+// })
+
 // const rotate = () =>{
 
 //     if (door.style.transform == 'rotateY(180deg)'){

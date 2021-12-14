@@ -13,7 +13,7 @@
         {
             "date":3,
             "nummer": "e",
-            "billede": "./assets/",
+            "billede": "./assets/anna.png",
             "animation":"",
             "hej":
             [
@@ -44,57 +44,57 @@
         {
             "date":4,
             "nummer": "r",
-            "billede": "./assets/"
+            "billede": "./assets/ana de armas.jpg"
         },
         {
             "date":5,
             "nummer": "t",
-            "billede": "./assets/"
+            "billede": "./assets/ludovico.png"
         },
         {
             "date":6,
             "nummer": "y",
-            "billede": "./assets/"
+            "billede": "./assets/softball.jfif"
         },
         {
             "date":7,
             "nummer": "u",
-            "billede": "./assets/"
+            "billede": "./assets/oxford.jpg"
         },
         {
             "date":8,
             "nummer": "i",
-            "billede": "./assets/"
+            "billede": "./assets/siri.png"
         },
         {
             "date":9,
             "nummer": "o",
-            "billede": "./assets/"
+            "billede": "./assets/taric.png"
         },
         {
             "date":10,
             "nummer": "a",
-            "billede": "./assets/"
+            "billede": "./assets/balto.png"
         },
         {
             "date":11,
             "nummer": "s",
-            "billede": "./assets/"
+            "billede": "./assets/Fuck dig andreas.png"
         },
         {
             "date":12,
             "nummer": "d",
-            "billede": "./assets/"
+            "billede": "./assets/far.png"
         },
         {
             "date":13,
             "nummer": "f",
-            "billede": "./assets/"
+            "billede": "./assets/benedict.jpg"
         },
         {
             "date":14,
             "nummer": "g",
-            "billede": "./assets/"
+            "billede": "./assets/simon moe.png"
         },
         {
             "date":15,

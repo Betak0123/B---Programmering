@@ -24,59 +24,102 @@
   color: rgb(1, 255, 77);
 }
 
-.billede{
-  height: 100px;
-  width: 100px; 
-  transition: 2s cubic-bezier(.93,-0.22,.95,1);
-}
 
 body{
     display: grid;
     background-image: url('./assets/julebg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100vw;
     font-family: 'Christmas Tree Lights Demo';
     grid-template-rows: 0.5fr 5fr 0.5fr;
-}
+  }
 
-header{
+  header{
     display: grid;
     place-items: center;
     /* border: 2px solid hotpink; */
     height: 20vh;
-} 
+  } 
 
 #darkmaker{
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0px;
   left: 0px;
   /* background-color: rgba(65, 65, 65, 0.678); */
   z-index: 0;
+  transition: all .5s ease-in-out;
 }
 
 main{
-    display: grid;
-    /* border: 2px solid hotpink; */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding: 1rem;
+  display: grid;
+  /* border: 2px solid hotpink; */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  padding: 1rem;
 }
 
 main div{
-  position:relative;
+  position: relative;
 }
+
+
 
 footer{
     display: grid;
     place-items: center;
     /* border: 2px solid hotpink; */
+  }
+
+
+#riddle{
+  background-color: rgb(121, 121, 121);
+  z-index:4;
+  position: fixed;
+  top: -20vw;
+  left: 25vw;
+  width: 50vw;
+  height: 20vh;
+  display: grid;
+  border-radius: 3rem;
+  place-items: center;
+  transition: all 1s cubic-bezier(.93,-0.22,.95,1);
+}
+#riddle.show{
+  top:  25vw;
+}
+#riddle2{
+  /* background-color: rgb(121, 121, 121); */
+  background-image: url('./assets/rainbow.gif');
+  background-size: cover;
+  z-index:4;
+  position: fixed;
+  top: -100vw;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+  transition: all 1s cubic-bezier(.93,-0.22,.95,1);
 }
 
+.rpic{
+  width: 30vw;
+  height: 50vh;
+}
 
+#riddle2.show2{
+  top:  0vw;
+}
+
+#closeicon{
+  cursor: pointer;
+}
 
 .nope{
   animation: nope 1s forwards ease-in-out;
@@ -93,51 +136,54 @@ footer{
 
 @keyframes nope {
   20%{
-      padding-right: 2rem;
-      background-color: rgb(255, 41, 41);
+    padding-right: 2rem;
+    background-color: rgb(255, 41, 41);
   }
   30%{
       background-color: rgb(255, 32, 32);
-  }
-  40%{
+    }
+    40%{
       padding-right: 0rem;
       padding-left: 1.5rem;
       background-color: rgb(255, 22, 22);
-  }
+    }
 
-  50%{
+    50%{
       background-color: rgb(206, 1, 1);
-  }
-  60%{
+    }
+    60%{
       padding-right: 2rem;
       padding-left: 0rem;
       background-color: rgb(206, 1, 1);
-  }
-  70%{
+    }
+    70%{
       background-color: rgb(187, 106, 31);
   }
   80%{
-      padding-right: 0rem;
-      padding-left: 1.5rem;
+    padding-right: 0rem;
+    padding-left: 1.5rem;
       background-color: rgb(99, 141, 0);
-  }
-  100%{
+    }
+    100%{
       padding-right: 0rem;
       padding-left: 0rem;
       background-color: green;
-
+      
+    }
   }
-}
+  
 
 
+  
 
+  /* ---------------------------------------------------------------- */
 
-
-/* ---------------------------------------------------------------- */
-
-.doorway, .door, .wholedoor{
+.doorway, .door, .wholedoor, .billede{
   height:100px;
   width:100px;
+}
+.billede{
+  transition: 2s cubic-bezier(.93,-0.22,.95,1);
 }
 
 .wholedoor{
@@ -152,7 +198,7 @@ footer{
   }
   
   .doorway {
-    border: 3px dotted #C65C5C;
+    /* border: 3px dotted #C65C5C; */
     overflow: hidden;
     transition: 2s cubic-bezier(.93,-0.22,.95,1);
     
