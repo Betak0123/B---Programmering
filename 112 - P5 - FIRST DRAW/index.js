@@ -45,9 +45,9 @@ const restart = () => {
 
 
 function mouseWheel(event){
-    if(event.delta == -150){
+    if(event.delta < 0){
         d = d+5;
-    }else if(event.delta == 150){
+    }else if(event.delta > 0){
         d = d-5
     }
   console.log(event.delta)
