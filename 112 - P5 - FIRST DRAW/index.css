@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+    font-size: 1rem;
+}
+
+#reset{
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    height: 2rem;
+    width: 5rem;
+    right: 2rem;
+    top: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+}
+
+#reset:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+#info{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    right: 2rem;
+    bottom: 2rem;
+}
