@@ -29,6 +29,26 @@
     border-radius: 1rem;
     background-color: yellow;
 }
+#reset2{
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    height: 2rem;
+    width: 5rem;
+    right: 8rem;
+    top: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+}
+
+#reset2:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+}
 
 body{
     width: 100vw;

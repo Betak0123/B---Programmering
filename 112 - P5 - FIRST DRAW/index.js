@@ -42,6 +42,10 @@ const restart = () => {
     frameCount = 0
     background('black')
 }
+const restart2 = () => {
+    frameCount = 0
+    // background('black')
+}
 
 
 function mouseWheel(event){
