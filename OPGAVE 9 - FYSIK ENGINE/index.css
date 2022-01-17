@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+    font-size: 1.1rem;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+#info1{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    left: 92vw;
+    bottom: 2rem;
+    transition: all .3 ease-in-out;
+}
+#info2{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    left: 3vw;
+    bottom: 2rem;
+    transition: all .3 ease-in-out;
+}
+#info3{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    left: 70vw;
+    bottom: 2rem;
+    transition: all .3 ease-in-out;
+}
+#infoTop{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    left: 40vw;
+    top: 2rem;
+    transition: all .3 ease-in-out;
+}
+
+#reset{
+    position: fixed;
+    z-index: 5;
+    background-color: gray;
+    color: white;
+    height: 2rem;
+    width: 5rem;
+    left: 5rem;
+    top: 10rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1.1rem;
+}
+
+#reset:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+    color: black;
+}
+
+#resetLuft{
+    position: fixed;
+    z-index: 5;
+    background-color: lightskyblue;
+    height: 2rem;
+    width: 8rem;
+    left: 5rem;
+    top: 14rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1.1rem;
+}
+
+#resetLuft:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+#inputLuft{
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    height: 2rem;
+    width: 8rem;
+    left: 13rem;
+    top: 14rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1.1rem;
+}
+#resetFrames{
+    position: fixed;
+    z-index: 5;
+    background-color: lightskyblue;
+    height: 2rem;
+    width: 8rem;
+    left: 5rem;
+    top: 18rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1.1rem;
+}
+
+#resetFrames:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+#inputFrames{
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    height: 2rem;
+    width: 8rem;
+    left: 13rem;
+    top: 18rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1.1rem;
+}
+
+.gone{
+    animation: gone 1s forwards ease-in-out;
+  }
+
+  @keyframes gone{
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+  }  
+
+  #partybtn{
+    position: fixed;
+    z-index: 5;
+    background-color: lightskyblue;
+    height: 2rem;
+    width: 8rem;
+    right: 5rem;
+    top: 18rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1rem;
+    background-position: center;
+}
+
+#partybtn:hover{
+    
+    border-radius: 1rem;
+    background-image: url('./assets/rainbow.gif');
+}
+#resetFrames:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+}
