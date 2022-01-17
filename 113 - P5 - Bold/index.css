@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto:wght@300';
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
@@ -69,6 +69,7 @@ canvas{
     border-radius: .5rem;
     transition: all .3s ease-in-out;
     cursor: pointer ;
+    font-size: 1.1rem;
 }
 
 #reset:hover{
@@ -91,6 +92,7 @@ canvas{
     border-radius: .5rem;
     transition: all .3s ease-in-out;
     cursor: pointer ;
+    font-size: 1.1rem;
 }
 
 #resetLuft:hover{
@@ -112,6 +114,7 @@ canvas{
     border-radius: .5rem;
     transition: all .3s ease-in-out;
     cursor: pointer ;
+    font-size: 1.1rem;
 }
 #resetFrames{
     position: fixed;
@@ -126,6 +129,7 @@ canvas{
     border-radius: .5rem;
     transition: all .3s ease-in-out;
     cursor: pointer ;
+    font-size: 1.1rem;
 }
 
 #resetFrames:hover{
@@ -147,6 +151,7 @@ canvas{
     border-radius: .5rem;
     transition: all .3s ease-in-out;
     cursor: pointer ;
+    font-size: 1.1rem;
 }
 
 .gone{
@@ -161,3 +166,31 @@ canvas{
         opacity: 0;
     }
   }  
+
+  #partybtn{
+    position: fixed;
+    z-index: 5;
+    background-color: lightskyblue;
+    height: 2rem;
+    width: 8rem;
+    right: 5rem;
+    top: 18rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1rem;
+    background-position: center;
+}
+
+#partybtn:hover{
+    
+    border-radius: 1rem;
+    background-image: url('./assets/rainbow.gif');
+}
+#resetFrames:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+}
