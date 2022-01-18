@@ -33,7 +33,7 @@ function show (){
     // ellipse(x, y, diameter)
 }
 function update (){
-    F_luft = -0.04 * kLuft * velocity  
+    F_luft = -0.0004 * kLuft * Math.abs(velocity) * velocity  
 
     F_res = F_t + F_luft
     velocity = velocity + F_res
