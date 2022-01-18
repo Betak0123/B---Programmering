@@ -41,7 +41,7 @@ function update (){
     y += velocity
         if(y>windowHeight-diameter/2-20){
             y=windowHeight-diameter/2-20
-            velocity = -velocity
+            velocity = -velocity*0.9999
             colorcounter += 1
             if(colorcounter <20 && partytime==true){
                 R1 = random(255)
