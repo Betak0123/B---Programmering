@@ -7,7 +7,7 @@ let rectX, rectY, rectW, rectH
 let rectSpeed = 10
 let score = 0
 let bird1, bird2, bird3, bird4, bird5, bird6, bird7, bird8
-const animRate = 80 
+const animRate = 40 
 
 
 function preload(){
@@ -27,7 +27,7 @@ function setup(){
     frameRate(60)
     background('green')
     x = windowWidth/2
-    diameter = 250 
+    diameter = 200 
     y = diameter/2
     rectW = 20
     rectH = 100
@@ -54,14 +54,14 @@ function show(){
     ellipse(x, y, diameter)
     imageMode(CENTER)
     let anim = frameCount % animRate /10
-    if (anim < 1)image(bird1,x,y)
-    if (anim > 1 && anim < 2)image(bird2,x,y)
-    if (anim > 2 && anim < 3)image(bird3,x,y)
-    if (anim > 3 && anim < 4)image(bird4,x,y)
-    if (anim > 4 && anim < 5)image(bird5,x,y)
-    if (anim > 5 && anim < 6)image(bird6,x,y)
-    if (anim > 6 && anim < 7)image(bird7,x,y)
-    if (anim > 7) image(bird8,x,y)
+    if (anim <= 0.5)image(bird1,x,y)
+    if (anim >= 0.5 && anim < 1)image(bird2,x,y)
+    if (anim >= 1 && anim < 1.5)image(bird3,x,y)
+    if (anim >= 1.5 && anim < 2)image(bird4,x,y)
+    if (anim >= 2 && anim < 2.5)image(bird5,x,y)
+    if (anim >= 2.5 && anim < 3)image(bird6,x,y)
+    if (anim >= 3 && anim < 3.5)image(bird7,x,y)
+    if (anim >= 3.5) image(bird8,x,y)
 
     
 }
@@ -75,6 +75,23 @@ function update(){
         y = windowHeight - diameter/2
         velocity = -velocity
     }
+    else if(y < 0 + diameter/2){
+        y = diameter/2
+        velocity = 0
+        score += 4
+    }
+}
+
+function collision(){
+    // cirklens nederste punkt er x, y + diameter/2
+    // cirklens øverste punkt er x, y - diameter/2
+    // let d = dist(x,y , rectX, rectY)
+    if (x>rectX && x < rectX + rectW){
+        if(y<rectH || y > windowHeight - rectH){
+            score -= 1
+        }
+    }
+    
 }
 
 function draw(){
