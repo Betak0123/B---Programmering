@@ -1,7 +1,7 @@
 
 
 // students = ['Mie','Bjarke','Sofus','Marius','Bjørn','Viktor','Theis','Frederik']
-students = ['pre']
+students = ['']
 let balls = []
 let cumcontainer, cumcolor, img
 let cockblock = false
@@ -14,7 +14,7 @@ function setup(){
     students.map( (item,index) =>{
         let c = color(random(255), random(255), random(255))
         let b = new Bold(random(10,40), index*45+15 , 200 , c,random(0.001,2),item,random(-50,50))
-        balls.push(b)
+        // balls.push(b)
         students.push(index)
         img = loadImage('./assets/kiks.png')
         dick1 = loadImage('./assets/dick.png')
@@ -30,7 +30,7 @@ function draw(){
     image(img, windowWidth/2-100, 350, 200, 200)
     
     if(cockblock==false){
-        if(frameCount%1 == 0){
+        if(frameCount%6 == 0){
             let b = new Bold(random(10,40), windowWidth/2-windowWidth/4 , 200 , 250,random(0.001,2),'cum  ',random(-50,50))
             let c = new Bold(random(10,40), windowWidth/2+windowWidth/4 , 200 , 250,random(0.001,2),'cum  ',random(-50,50))
 
@@ -55,7 +55,7 @@ function draw(){
     rect(10, 10 , cumcontainer, 40)
     // console.log(cumcontainer)
     
-    if(balls.length>99){
+    if(balls.length>98){
     select('#cumOverload').html('!!!CUM OVERLOAD!!!')
     console
     cockblock = true
