@@ -37,7 +37,7 @@ class Bold{
 
         this.F_res = this.F_t + this.F_luft
         this.velocity = this.velocity + this.F_res
-        this.xvelocity = this.xvelocity*0.99     
+        this.xvelocity = this.xvelocity*0.97     
         this.ypos += this.velocity
         this.xpos += this.xvelocity
         // console.log(this.xpos)
