@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'Springtime';
+    src:  url('./assets/SpringtimeDaydream-8Wn2.ttf')
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Springtime';
+    
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+header{
+    width: 100vw;
+    height: 20vh;
+    position: fixed;
+    background-color: rgb(85, 83, 83);
+    display: grid;
+    font-size: 1.3rem;
+    place-items: center;
+    color: rgb(247, 226, 226);
+    /* text-decoration-line: overline; */
+    text-shadow: 4px 2px 4px #000000;
+    border: solid rgb(247, 226, 226) 10px ;
+}
+
+main{
+    position: fixed;
+    top: 20vh;
+    padding: 2rem;
+    font-family: 'Springtime';
+    font-size: 1.2rem;
+    background-color: lightgray;
+    width: 100vw;
+    height: 85vh;
+    border: double rgb(82, 77, 77) .7rem;
+}
+
+#save-button{
+    /* position: fixed;
+    z-index: 5; */
+    background-color: rgb(247, 226, 226);
+    color: black;
+    height: 2rem;
+    width: 6rem;
+    /* left: 13rem;
+    top: 14rem; */
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer ;
+    font-size: 1.1rem;
+    text-shadow: none;
+}
+
+#save-button:hover{
+    
+    border-radius: 1rem;
+    background-color: yellow;
+    text-decoration-line: underline;
+}

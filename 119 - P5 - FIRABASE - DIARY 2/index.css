@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'Springtime';
+    src:  url('./assets/SpringtimeDaydream-8Wn2.ttf')
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
