@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'Spacy';
+    src:  url('./assets/Entanglement-rgpRB.ttf')
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto:wght@300';
+    font-size: 1rem;
+}
+
+
+body{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+
+canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#info1{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    transition: all .3 ease-in-out;
+    top: 30vh;
+    left: 40vw;
+    font-size: 1.4rem;
+    /* font-family: 'Spacy'; */
+}
+#info2{
+    width: 25vw;
+    height: 50vh;
+    position: fixed;
+    z-index: 5;
+    color: white;
+    transition: all .3 ease-in-out;
+    top: 25vh;
+    left: 1vw;
+    font-size: 1.4rem;
+    text-decoration:gray underline;
+    /* font-family: 'Spacy'; */
+    /* border: blue double 10px; */
+}
+#GramShow{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    transition: all .3 ease-in-out;
+    top: 5vh;
+    left: 80vw;
+    font-size: 1.2rem;
+    /* font-family: 'Spacy'; */
+}
+#JouleShow{
+    position: fixed;
+    z-index: 5;
+    color: white;
+    transition: all .3 ease-in-out;
+    top: 10vh;
+    left: 80vw;
+    font-size: 1.2rem;
+    /* font-family: 'Spacy'; */
+}
+
+#counter{
+    position: fixed;
+    top: 5rem;
+}
+
+#headline{
+    position: fixed;
+    z-index: 5;
+    color: White;
+    /* left: 2rem; */
+    /* top: 2rem; */
+    transition: all .3 ease-in-out;
+    font-family: 'Spacy';
+    font-size: 3rem;
+    /* border: solid black 3px; */
+    top: 10vh;
+}
+
