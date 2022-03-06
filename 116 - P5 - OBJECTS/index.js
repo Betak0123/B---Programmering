@@ -47,6 +47,7 @@ function draw(){
     balls.map( item =>{
         item.show()
     })
+
     select('#counter').html('Antal cum:' + balls.length)
     cumcontainer = map(balls.length, 0, 100, 10, windowWidth-20, true)
     greencum = map(balls.length, 0, 100, 255, 0, true)

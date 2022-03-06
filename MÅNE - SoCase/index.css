@@ -30,3 +30,28 @@ canvas{
     bottom: 2rem;
     transition: all .3 ease-in-out;
 }
+
+.rot-left{
+    animation: rotate_left 5s linear infinite;
+}
+.rot-right{
+    animation: rotate_right 5s linear infinite;
+}
+
+@keyframes rotate_left {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360);
+    }
+}
+@keyframes rotate_right {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360);
+    }
+}
+
